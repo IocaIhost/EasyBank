@@ -95,9 +95,133 @@ select:-webkit-autofill:focus {
     margin-right: auto;
 }
 
+
+/* LOGO */
+.logo {
+    display: flex;
+    width: 129px;
+    height: 20px;
+    object-fit: contain;
+}
+
+.logo:hover {
+    opacity: 0.8;
+}
+
+.logo:active {
+    opacity: 0.6;
+}
+
+
+/* SITENAV */
+.sitenav{
+    position: relative;
+    left: 19px;
+}
+
+.sitenav__list{
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    font-size: 14px;
+    line-height: normal;
+}
+
+.sitenav__item{
+    padding-top: 32px;
+    padding-bottom: 32px;
+    position: relative;
+}
+
+.sitenav__item:not(:last-child){
+    margin-right: 30px;
+}
+
+.sitenav__link{
+    display: block;
+    text-decoration: none;
+    color: var(--grey);
+}
+
+.sitenav__link::after{
+    display: none;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 4px;
+    content: '';
+    background-color: var(--green);
+    background-image: var(--gradient);
+}
+
+.sitenav__link:hover::after{
+    display: block;
+}
+
+.sitenav__link:hover{
+    color: var(--black);
+}
+
+
+/* BUTTON */
+.button{
+    position: relative;
+    display: inline-block;
+    padding: 8px 34px;
+    background-color: var(--green);
+    background-image: var(--gradient);
+    color: #fff;
+    font-size: 14px;
+    line-height: 28px;
+    font-weight: 500;
+    text-decoration: none;
+    text-transform: capitalize;
+    border-radius: 22px;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.button:hover::after{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 22px;
+    background-color: rgba(255, 255, 255, 0.4);
+    content: "";
+}
+
+.button:active::after{
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+/* SITE-HEADER */
+.site-header {
+    background-color: #fff;
+}
+
+.site-header__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.site-header__img{
+    width: 140px;
+    height: 34px;
+    position: absolute;
+    left: 127px;
+}
+
+/* MAIN CONTENT */
 .main-content{
     flex-grow: 1;
 }
+
 
 
 @media
