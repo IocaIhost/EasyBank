@@ -1,9 +1,10 @@
 :root{
-    --text-color: '';
-    --bg-color: '';
-    --body-font-family: "Arial", sans-serif;
-    --primary-color: '';
-    --primary-heading: '';
+    --green: #30c88f;
+    --black: #2d314d;
+    --grey: #9597a5;
+    --bg-color: #fafafa;
+    --gradient: linear-gradient(135deg, #33D35E 0%, #2AB6D9 99.58%);
+    --body-font-family: "Public Sans", "Arial", sans-serif;
 }
 
 html{
@@ -32,10 +33,11 @@ body{
     padding: 0;
     margin: 0;
     font-size: 16px;
-    line-height: 1.5;
+    line-height: 26px;
+    letter-spacing: -0.25px;
     font-family: var(--body-font-family);
     background-color: var(--bg-color);
-    color: var(--text-color);
+    color: var(--grey);
 }
 
 img{
@@ -86,9 +88,9 @@ select:-webkit-autofill:focus {
 /* CONTAINER */
 .container{
     width: 100%;
-    max-width: 1200px;
-    padding-left: 50px;
-    padding-right: 50px;
+    max-width: 1150px;
+    padding-left: 20px;
+    padding-right: 20px;
     margin-left: auto;
     margin-right: auto;
 }
