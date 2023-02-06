@@ -22,8 +22,8 @@ html{
 
 
 *:focus{
-    outline: '';
-    outline-offset: 2px;
+    outline: 2px dashed var(--green);
+    outline-offset: 3px;
 }
 
 body{
@@ -100,9 +100,6 @@ select:-webkit-autofill:focus {
 /* LOGO */
 .logo {
     display: flex;
-    width: 129px;
-    height: 20px;
-    object-fit: contain;
 }
 
 .logo:hover {
@@ -113,11 +110,18 @@ select:-webkit-autofill:focus {
     opacity: 0.6;
 }
 
+.logo__img{
+    width: 143px;
+    height: 28px;
+    object-fit: contain;
+    margin-top: 6px;
+}
 
 /* SITENAV */
 .sitenav{
     position: relative;
-    left: 19px;
+    left: 10px;
+    bottom: 2px;
 }
 
 .sitenav__list{
@@ -199,6 +203,79 @@ select:-webkit-autofill:focus {
 .button:active::after{
     background-color: rgba(255, 255, 255, 0.6);
 }
+
+
+/* ARTICLES GRID */
+.article-cards-grid {
+    display: flex;
+    flex-wrap: wrap;
+    padding:  0;
+    margin: 0;
+    margin-left: -30px;
+    list-style: none;
+}
+
+.article-cards-grid__item {
+    width: 100%;
+    max-width: 255px;
+    margin-left: 30px;
+}
+
+.article-card {
+    border-radius: 5px;
+    overflow: hidden;
+    background-color: fff;
+}
+
+/* ARTICLE CARD */
+.article-card__img {
+    display: block;
+    width: 255px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.article-card__content {
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+}
+
+.article-card__title {
+    margin-top: 0;
+    margin-bottom: 8px;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 100;
+    letter-spacing: -0.3px;
+}
+
+.article-card__link {
+    display: inline-block;
+    text-decoration: none;
+    color: var(--black);
+
+}
+
+.article-card__link:hover {
+    color: var(--green);
+}
+
+.article-card__author {
+    order: -1;
+    margin-top: 0;
+    margin-bottom: 8px;
+    font-size: 10px;
+    line-height: 18px;
+    color: var(--grey);
+}
+
+.article-card__excerpt {
+    margin: 0;
+    font-size: 13px;
+    line-height: 18px;
+}
+
 
 /* SITE-HEADER */
 .site-header {
@@ -352,6 +429,24 @@ select:-webkit-autofill:focus {
 .feature__description {
     margin: 0;
 }
+
+
+/* INDEX ARTICLES */
+.index-articles {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.index-articles__title {
+    margin-top: 0;
+    margin-bottom: 40px;
+    font-size: 40px;
+    line-height: 64px;
+    font-weight: 100;
+    color: var(--black);
+}
+
+
 
 @media
 only screen and (-webkit-min-device-pixel-ratio: 2),
